@@ -1,5 +1,6 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:print_app/screens/home/home_view.dart';
 import 'package:provider/provider.dart';
 import '../../utils/export.dart';
 import '../new_habit/export.dart';
@@ -60,7 +61,7 @@ class _BottomNavViewBody extends StatelessWidget {
   Widget _buildBody(int currentIndex) {
     switch (currentIndex) {
       case 0:
-        return const NewHabitView();
+        return const HomeView();
       case 1:
         return  NewHabitView();
       case 2:
